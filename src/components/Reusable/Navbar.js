@@ -1,7 +1,7 @@
 // Importing React Class Based Component
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from "../../images/logo.png"
+import logo from "../../images/Main_logo.png"
 import {FaCartArrowDown} from "react-icons/fa"
 
 export default class Navbar extends Component {

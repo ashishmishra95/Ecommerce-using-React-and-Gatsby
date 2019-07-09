@@ -11,3 +11,17 @@
   align-items: center;
   flex-direction: column;
 }
+.aboutus-background{
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.service-background{
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -13,14 +13,14 @@ import Teampage from "../components/About/Teampage"
 
 
 
-const AboutPage = ({data}) => (
+const ServicePage = ({data}) => (
   <Layout>
   <SEO title = "Home"/>
     <Hero 
     img = {data.img.childImageSharp.fluid}// we have used this to demestified the data which has been used above for image
     title = "I write code"
     subtitle = ""
-    heroClass = "aboutus-background"
+    heroClass = "service-background"
     />
     <DualInfoBlock head = "A message form CEO.."/>
     <InfoBlock head = "About Vision"/>
@@ -31,7 +31,7 @@ const AboutPage = ({data}) => (
 // Writing graphql query to access image
 export const myQuery = graphql`
 {
-    img: file(relativePath: {eq: "about.png"}){
+    img: file(relativePath: {eq: "service.jpg"}){
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -42,4 +42,4 @@ export const myQuery = graphql`
 }
 `
 
-export default AboutPage
+export default ServicePage
