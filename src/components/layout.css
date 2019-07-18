@@ -1,6 +1,10 @@
 .bg-theme{
   background-color: #586776;
 }
+
+.bg-theme-cart{
+  background-color: #EAF0FF;
+}
 .cart-icon{
   font-size: 2rem;
 }
@@ -19,7 +23,8 @@
   flex-direction: column;
 }
 .service-background{
-  min-height: 70vh;
+  min-height: 60vh;
+  margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;

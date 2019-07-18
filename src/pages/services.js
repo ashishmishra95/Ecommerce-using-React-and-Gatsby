@@ -9,6 +9,7 @@ import Hero from "../components/Reusable/Hero"
 import InfoBlock from "../components/Reusable/InfoBlock"
 import DualInfoBlock from '../components/Reusable/DualInfoBlock'
 import Teampage from "../components/About/Teampage"
+import Servicetypes from "../components/Service/Servicetypes"
 
 
 
@@ -25,6 +26,7 @@ const ServicePage = ({data}) => (
     <DualInfoBlock head = "A message form CEO.."/>
     <InfoBlock head = "About Vision"/>
     <Teampage/>
+    <Servicetypes/>
     
   </Layout>
 )
