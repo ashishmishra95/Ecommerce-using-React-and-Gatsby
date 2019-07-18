@@ -44,7 +44,7 @@ export default class h1 extends Component {
                                     data-item-id={node.id}
                                     data-item-name={node.title}
                                     data-item-price={node.price}
-                                    data-item-url="https:google.com"//Random site just for cart to work
+                                    data-item-url="https://ecommercegatsby.netlify.com/"//Random site just for cart to work
                                     data-item-image={node.image.fixed.src}
                                     className ="mb-3 btn btn-warning snipcart-add-item">Join Now</button>
                                     </div>
