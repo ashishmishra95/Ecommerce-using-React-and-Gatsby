@@ -7,31 +7,29 @@ import SEO from "../components/seo"
 // importing Hero component in index.js
 import Hero from "../components/Reusable/Hero"
 import InfoBlock from "../components/Reusable/InfoBlock"
-import DualInfoBlock from '../components/Reusable/DualInfoBlock'
-import Teampage from "../components/About/Teampage"
+import Contact from "../components/Contact/Contact"
 
 
 
 
-const AboutPage = ({data}) => (
+const ContactPage = ({data}) => (
   <Layout>
   <SEO title = "Home"/>
     <Hero 
     img = {data.img.childImageSharp.fluid}// we have used this to demestified the data which has been used above for image
-    title = "I write code"
+    title = "Contact us"
     subtitle = ""
     heroClass = "aboutus-background"
     />
-    <DualInfoBlock head = "A message form CEO.."/>
-    <InfoBlock head = "About Vision"/>
-    <Teampage/>
+    <InfoBlock head = "How we can help?"/>
+    <Contact/>
     
   </Layout>
 )
 // Writing graphql query to access image
 export const myQuery = graphql`
 {
-    img: file(relativePath: {eq: "about.png"}){
+    img: file(relativePath: {eq: "contact.png"}){
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -42,4 +40,4 @@ export const myQuery = graphql`
 }
 `
 
-export default AboutPage
+export default ContactPage
